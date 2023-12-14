@@ -21,7 +21,7 @@ function reducer(state, { type, payload }){
       if (state.overwrite) {
         return {
           ...state,
-          current: payload,
+          current: payload.toString(),
           overwrite: false,
         }}
       if (payload === '0' && state.current === '0'){
